@@ -1,0 +1,15 @@
+I = imread("ngc6543a.jpg");    % 画像データの読み込み
+I = rgb2gray(I);    % カラー画像をグレイスケール画像へ変換
+I = imresize(I, 0.25);    % 画像を1/4倍に縮小
+
+J = imresize(I, 5, "Method", "nearest");    % 画像の5倍拡大
+figure, imshow(J);                           % 画像の表示  
+J = imresize(I, 5, "Method", "bilinear");    % 画像の5倍拡大
+figure, imshow(J);                           % 画像の表示  
+I = imresize(I, 5, "Method", "bicubic");    % 画像の5倍拡大
+figure, imshow(J);                           % 画像の表示  
+
+
+
+
+

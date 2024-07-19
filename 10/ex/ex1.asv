@@ -1,0 +1,21 @@
+I = imread("cameraman.tif");    % ‰æ‘œ‚Ì“Ç‚İ‚İ
+figure, imshow(I);    % ‰æ‘œ•\¦
+
+Sc = affine2d([2.0 0 0; 0 0.25 0; 0 0 1]);    % Šg‘åk¬                
+J = imwarp(I, Sc);    % •ÏŠ·ˆ— 
+figure, imshow(J);
+
+R = affine2d([ cos(pi / 6) sin(pi / 6) 0;
+               -sin(pi / 6 cos(pi / )])    % ‰ñ“]
+    
+    
+    % •ÏŠ·ˆ— 
+figure, imshow(J);
+
+     % x²‚Å‹¾‰e                
+    % •ÏŠ·ˆ—
+figure, imshow(J);
+
+    % x²•ûŒü‚ÖƒXƒLƒ…[                
+    % •ÏŠ·ˆ— 
+figure, imshow(J);

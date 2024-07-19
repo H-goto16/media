@@ -1,0 +1,25 @@
+I = imread("peacock.jpg");    % クジャク画像の読み込み
+I = rgb2gray(I);    % RGB画像をgrayscale画像へ
+I = cast(I, 'double');    % 変数の型を変更
+figure, imshow();    % 画像表示
+
+    % 画像の平滑化
+figure, imshow();    % 処理画像を表示
+
+    % 鮮鋭化フィルタの生成
+    
+    
+    % フィルタhを画像に適用
+figure, imshow();    % 処理画像を表示
+
+    % 鮮鋭化のパラメータ
+    % 鮮鋭化フィルタの生成
+    
+    
+    % 鮮鋭化フィルタの表示
+    % フィルタhを画像に適用
+figure, imshow();    % 処理画像を表示
+
+
+
+
